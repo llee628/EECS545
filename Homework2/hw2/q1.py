@@ -63,11 +63,11 @@ def main():
 	x2 = -w[0]/w[2] - w[1]/w[2]*x1
 	plt.plot(x1,x2, c='black')
 
-	plt.xlabel('x1')
-	plt.ylabel('x2')
+	plt.xlabel('$x_1$')
+	plt.ylabel('$x_2$')
 	plt.title('q1(c)')
-	#plt.show()
-	plt.savefig('q1_c.png')
+	plt.show()
+	#plt.savefig('q1_c.png')
 
 	#breakpoint()
 
