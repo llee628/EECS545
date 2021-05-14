@@ -38,7 +38,7 @@ def show_images(images):
         ax.set_aspect('equal')
         plt.imshow(img.reshape([sqrtimg,sqrtimg]))
         #plt.show()
-    plt.show()
+    #plt.show()
     return
 
 
@@ -338,7 +338,7 @@ def run_a_gan(D, G, D_solver, G_solver, discriminator_loss, generator_loss,
                     iter_count,d_total_error.data,g_error.data))
                 imgs_numpy = fake_images.data.cpu().numpy()
                 show_images(imgs_numpy[0:16])
-                #plt.pause(1.0)
+                plt.pause(1.0)
                 print()
             iter_count += 1
 
